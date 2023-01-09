@@ -11,10 +11,28 @@
             motion:touchAnchorId="@+id/rv_list"
             motion:dragDirection="dragUp"
             />
+        <KeyFrameSet >
+            <KeyAttribute
+                motion:motionTarget="@+id/pb"
+                motion:framePosition="80"
+                android:alpha="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/pb"
+                motion:framePosition="0"
+                android:alpha="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/pb"
+                motion:framePosition="100"
+                android:alpha="1"/>
+        </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-
+        <Constraint
+            android:id="@+id/pb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            motion:layout_constraintBottom_toTopOf="parent" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
