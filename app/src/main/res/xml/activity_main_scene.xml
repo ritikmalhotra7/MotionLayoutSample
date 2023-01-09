@@ -11,7 +11,7 @@
             motion:touchAnchorId="@+id/rv_list"
             motion:dragDirection="dragUp"
             />
-        <KeyFrameSet >
+        <!--<KeyFrameSet >
             <KeyAttribute
                 motion:motionTarget="@+id/pb"
                 motion:framePosition="80"
@@ -24,7 +24,7 @@
                 motion:motionTarget="@+id/pb"
                 motion:framePosition="100"
                 android:alpha="1"/>
-        </KeyFrameSet>
+        </KeyFrameSet>-->
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
